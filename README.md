@@ -1,29 +1,26 @@
 # Sample PHP PayU WebCheckout Integration
 
-este proyecto es una integracion simple de la pataforma de pagos WebCheckout a una aplicacion PHP
-
-IMPORTANTE este no es una guia oficial de PayU
+Este proyecto es una integración simple de la plataforma de pagos WebCheckout a una aplicación PHP
+IMPORTANTE este no es una guía oficial de PayU
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+* PHP 7.0
+* MySql
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
+Se debe crear el archivo Conf.php donde se guardan los datos del negocio con el sigiente formato
 
 ```
-Give the example
+$API_KEY= /* your ApiKey */;
+$MERCHANTID = /* your merchantId */;
+$ACCOUNTID =  /* your accountId */;
+$RESPONSEUrl= "/* www.example.com/response.php */";
+$CONFIRMATIONUrl = "/* www.example.com/confirm.php */";
 ```
 
 And repeat

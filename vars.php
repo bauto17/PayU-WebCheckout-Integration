@@ -1,18 +1,19 @@
 <?php
+include 'Conf.php';
 //======================================================================
 // General Data
 //======================================================================
 $postUrl="https://sandbox.gateway.payulatam.com/ppp-web-gateway/";
-$apiKey="4Vj8eK4rloUd272L48hsrarnUA";
-$merchantId ="508029";
-$accountId="512321";
+$apiKey=$API_KEY;
+$merchantId = $MERCHANTID;
+$accountId = $ACCOUNTID;
 $tax="0";
 $taxReturnBase="0";
 $currency="COP";
 $test="1";
 $buyerEmail="test@test.com";
-$responseUrl="http://payuintegration.azurewebsites.net/response.php";
-$confirmationUrl = "http://payuintegration.azurewebsites.net/confirm.php";
+$responseUrl = $RESPONSEUrl;
+$confirmationUrl = $CONFIRMATIONUrl;
 //======================================================================
 // Init
 //======================================================================
