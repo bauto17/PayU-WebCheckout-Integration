@@ -1,0 +1,22 @@
+
+/----------------ftp
+ftp://waws-prod-bay-033.ftp.azurewebsites.windows.net
+user: payuintegration\$payuintegration
+clave: AdyYC5r3ZJlZdrd9QAjhgrq14q5STnwaw4Lv0TJyhpLzR7DZTAixSYWq6FsA
+
+/----------------bd
+us-cdbr-azure-east-c.cloudapp.net
+user: b7fe2af8ade0dd
+clave: bdc7eeaa
+
+
+
+
+
+
+
+
+
+
+http://payuintegration.azurewebsites.net/
+

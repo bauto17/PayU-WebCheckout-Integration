@@ -10,14 +10,24 @@ include 'vars.php';
   <link rel="stylesheet" href="hola.css" />
   <script type="text/javascript" src="codigo.js"></script>
 </head>
-<body>
+<body class="ltr">
+  <div id="logo">
+      <a href="index.php">
+        <img class="" src="https://i0.wp.com/independientesantafe.com/wp-content/uploads/2016/02/cropped-Santa-Fe-escudo-2016.png?fit=240%2C240">
+        <span>Tienda del león</span>
+      </a>
+    </div>
+
+    <div id="menu">
+      <a class="home-link" href="index.php">Inicio</a>
+    </div>
   <section class="SBposts">
     <?php
 
     for ($i = 0; $i < $cantidad; $i++){
       $product=getItemById($i);
-      if ($product['disponible']==1) {
-        $d="disponible";
+      if ($product['disponible']>0) {
+        $d=" unidades ".$product['disponible'];
       }else {
         $d="no disponible";
       }
@@ -54,15 +64,16 @@ include 'vars.php';
       <th>valor</th>
     </tr>
   </table>
+  <p></p>
   <table>
     <tr>
-      <th class="total">TOTAL</th>
-      <th class="total" id="total"></th>
+      <th>TOTAL</th>
+      <th id="total">0</th>
     </tr>
   </table>
   <form method="post" action="compra.php" >
     <input name="items" id="items"    type="hidden"  value="0">
-    <input name="Submit"   type="submit"  value="Enviar">
+    <input class="button" name="Submit"   type="submit"  value="Enviar">
   </form>
 
 </body>

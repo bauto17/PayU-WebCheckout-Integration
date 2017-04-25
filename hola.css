@@ -78,8 +78,17 @@ table {
 }
 
 th, td {
-    text-align: left;
+    text-align: center;
     padding: 8px;
+}
+
+.button {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+  background-color: #22bce0;
+  color: black;
+  padding: 8px;
 }
 
 tr:nth-child(even){background-color: #f2f2f2}
@@ -91,4 +100,117 @@ th {
 th.total {
     background-color: #E61D1D;
     color: black;
+}
+
+
+#menu {
+  background-color: whiteSmoke;
+  text-align: center;
+}
+
+#menu a {
+  color: #8F8F8F;
+  display: inline-block;
+  padding: .5em 1em;
+  text-shadow: 0 1px 0 #EDEDED;
+  text-decoration: none;
+}
+
+#menu a:hover {
+  background: rgb(220, 220, 220);
+}
+
+#menu .home-link {
+  margin-right: 1em;
+}
+
+#logo {
+  text-align: center;
+  background-color: #ededed;
+  padding: 1em 0;
+}
+
+#logo a {
+  text-decoration: none;
+  color: #414142;
+  position: relative;
+}
+
+#logo a:active {
+  background: none;
+}
+
+#logo img {
+  vertical-align: middle;
+  max-width: 60px;
+}
+
+#logo span {
+  vertical-align: middle;
+  font-size: 2em;
+  font-family: 'Bree Serif', serif;
+  margin-left: .2em;
+}
+
+
+@media screen and (min-width:601px) {
+
+  #menu {
+    position: absolute;
+    top: -16px;
+    left: -20px;
+    width: 250px;
+    padding-top: 2em;
+    -webkit-transform-origin: 0 0;
+       -moz-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+         -o-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: rotate(-35deg) translate(-92px, 22px);  /* Safari 3.1+, Chrome */
+       -moz-transform: rotate(-35deg) translate(-92px, 22px);  /* Firefox 3.5-15 */
+        -ms-transform: rotate(-35deg) translate(-92px, 22px);  /* IE9+ */
+         -o-transform: rotate(-35deg) translate(-92px, 22px);  /* Opera 10.5-12.00 */
+            transform: rotate(-35deg) translate(-92px, 22px);  /* Firefox 16+, Opera 12.50+ */
+  }
+
+  .rtl #menu {
+    position: absolute;
+    top: -16px;
+    left: auto;
+    right: -20px;
+    width: 250px;
+    padding-top: 2em;
+    -webkit-transform-origin: 0 0;
+       -moz-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+         -o-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: rotate(35deg) translate(62px, -129px);  /* Safari 3.1+, Chrome */
+       -moz-transform: rotate(35deg) translate(62px, -129px);  /* Firefox 3.5-15 */
+        -ms-transform: rotate(35deg) translate(62px, -129px);  /* IE9+ */
+         -o-transform: rotate(35deg) translate(62px, -129px);  /* Opera 10.5-12.00 */
+            transform: rotate(35deg) translate(62px, -129px);  /* Firefox 16+, Opera 12.50+ */
+  }
+
+  #menu a {
+    display: block;
+    padding: .2em 0;
+  }
+
+}
+
+@media screen and (max-width:600px) {
+
+  #logo img {
+    width: 15%;
+  }
+
+}
+
+@media screen and (max-width:404px) {
+
+  h1, #logo span {
+    font-size: 1.5em;
+  }
+
 }
