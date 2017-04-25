@@ -37,15 +37,8 @@ Se puede hacer uso del modo de pruebas al enviar en el formulario el campo de te
 
 ### Users Test
 
-Explain what these tests test and why
+para probar el sistema se deben crear targetas con los nombres APPROVED(aprobada), REJECTED(rechazada) o PENDING(pendiente), y se deb ingresar un numero de trajeta valido y que corresponda a la franquicia seleccionada(Visa, masterdCard, Etc).
 
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
