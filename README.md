@@ -23,27 +23,19 @@ $RESPONSEUrl= "/* www.example.com/response.php */";
 $CONFIRMATIONUrl = "/* www.example.com/confirm.php */";
 ```
 
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
 ## Running the tests
 
-Explain how to run the automated tests for this system
+la configuracion de un entorno de pruebas se encuentra en [este link](http://developers.payulatam.com/es/web_checkout/sandbox.html)
 
-### Break down into end to end tests
+### sandbox tests
 
-Explain what these tests test and why
+Se puede hacer uso del modo de pruebas al enviar en el formulario el campo de text con valor 1
 
 ```
-Give an example
+<input name="test" type="hidden" value="1">
 ```
 
-### And coding style tests
+### Users Test
 
 Explain what these tests test and why
 
@@ -67,7 +59,7 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
 
 ## Authors
 
